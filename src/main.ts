@@ -60,8 +60,9 @@ export default class FrontmatterIdPlugin extends Plugin {
 		}
 
 		this.app.fileManager.processFrontMatter(file, (frontmatter) => {
-			if (typeof frontmatter.id === "undefined") {
-				frontmatter["id"] = uuidFn();
+			const { name } = this.settings;
+			if (typeof frontmatter[name] === "undefined") {
+				frontmatter[name] = uuidFn();
 			}
 		});
 	}

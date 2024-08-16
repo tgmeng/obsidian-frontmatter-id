@@ -4,11 +4,13 @@ import FrontmatterIdPlugin from "../main";
 import { FolderSuggestModal } from "./folder-suggest-modal";
 
 export interface FrontmatterIdSettings {
+	name: string;
 	exclude?: string[];
 	version: string;
 }
 
 export const DefaultSettings: FrontmatterIdSettings = {
+	name: "id",
 	version: "v7",
 };
 
@@ -24,8 +26,18 @@ export class SettingTab extends PluginSettingTab {
 
 	display(): void {
 		this.containerEl.empty();
+		this.displayName();
 		this.displayVersion();
 		this.displayExclude();
+	}
+
+	displayName(): void {
+		new Setting(this.containerEl).setName("Name").addText((text) =>
+			text.setValue(this.plugin.settings.name).onChange(async (value) => {
+				this.plugin.settings.name = value;
+				await this.plugin.saveSettings();
+			})
+		);
 	}
 
 	displayVersion(): void {
