@@ -1,11 +1,10 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
+	"id": "frontmatter-id-plugin",
+	"name": "Frontmatter Id Plugin",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"description": "Automatically add ID to note's frontmatter.",
+	"author": "tgmeng",
+	"authorUrl": "https://github.com/tgmeng",
 	"isDesktopOnly": false
 }
