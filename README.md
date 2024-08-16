@@ -9,6 +9,6 @@
 
 ## 配置
 
-- name：生成的 frontmatter key 名, 默认为 `id`
-- version：生成 id 使用的算法版本，默认为 `v7`
-- exclude：某些文件夹的笔记不需要生成 id（比如各种模板文件），通过改选项可以排除这些文件夹
+- `name`：生成的 frontmatter key 名，默认为 `id`
+- `version`：生成 id 使用的算法版本，默认为 `v7`
+- `exclude`：某些文件夹的笔记不需要生成 id（比如各种模板文件），通过改选项可以排除这些文件夹

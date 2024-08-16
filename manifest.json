@@ -1,6 +1,6 @@
 {
-	"id": "frontmatter-id-plugin",
-	"name": "Frontmatter ID Plugin",
+	"id": "frontmatter-id",
+	"name": "Frontmatter ID",
 	"version": "1.0.0",
 	"minAppVersion": "1.6.7",
 	"description": "Automatically add id to note's frontmatter.",
