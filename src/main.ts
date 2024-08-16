@@ -12,7 +12,7 @@ export default class FrontmatterIdPlugin extends Plugin {
 
 		this.addCommand({
 			id: "generate-frontmatter-id",
-			name: "Generate Frontmatter Id",
+			name: "Generate Frontmatter ID",
 			checkCallback: (checking: boolean) => {
 				const markdownView =
 					this.app.workspace.getActiveViewOfType(MarkdownView);

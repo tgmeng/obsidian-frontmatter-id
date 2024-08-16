@@ -1,9 +1,9 @@
 {
 	"id": "frontmatter-id-plugin",
-	"name": "Frontmatter Id Plugin",
+	"name": "Frontmatter ID Plugin",
 	"version": "1.0.0",
-	"minAppVersion": "0.15.0",
-	"description": "Automatically add ID to note's frontmatter.",
+	"minAppVersion": "1.6.7",
+	"description": "Automatically add id to note's frontmatter.",
 	"author": "tgmeng",
 	"authorUrl": "https://github.com/tgmeng",
 	"isDesktopOnly": true

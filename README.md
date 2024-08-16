@@ -1,11 +1,11 @@
 # Obsidian Frontmatter ID Plugin
 
-给笔记自动生成 id 的 [Obsidian](https://obsidian.md) 插件.
+在笔记的 frontmatter 上自动生成 id 的 [Obsidian](https://obsidian.md) 插件.
 
 ## 使用
 
 1. 新建笔记，会自动在 frontmatter 中插入 id
-2. 通过 `Generate Frontmatter Id` 命令为当前笔记生成 id
+2. 通过 `Generate frontmatter id` 命令为当前笔记生成 id
 
 ## 配置
 
