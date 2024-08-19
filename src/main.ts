@@ -1,6 +1,7 @@
 import { MarkdownView, Plugin, TFile } from "obsidian";
 import * as uuid from "uuid";
 import { DefaultSettings, FrontmatterIdSettings, SettingTab } from "./settings";
+import { delay } from "./utils";
 
 export default class FrontmatterIdPlugin extends Plugin {
 	settings: FrontmatterIdSettings;
@@ -29,6 +30,7 @@ export default class FrontmatterIdPlugin extends Plugin {
 
 		this.registerEvent(
 			this.app.vault.on("create", async (file: TFile) => {
+				await delay(500);
 				this.updateFrontmatterId(file);
 			})
 		);
@@ -49,6 +51,10 @@ export default class FrontmatterIdPlugin extends Plugin {
 			shouldExclude &&
 			this.settings.exclude?.find((path) => file.path.startsWith(path))
 		) {
+			return;
+		}
+
+		if (!(file instanceof TFile) || file.extension !== "md") {
 			return;
 		}
 
